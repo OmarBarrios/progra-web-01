@@ -41,9 +41,10 @@ exports.signup = (req, res) => {
 };
 
 exports.signin = (req, res) => {
+  const userName = req.body.username == req.body.email
   User.findOne({
     where: {
-      username: req.body.username
+      username: userName
     }
   })
     .then(user => {
@@ -86,6 +87,7 @@ exports.signin = (req, res) => {
       });
     })
     .catch(err => {
+      console.error(err);
       res.status(500).send({ message: err.message });
     });
 };
