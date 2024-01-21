@@ -1,6 +1,6 @@
 const db = require("../models");
-const ROLES = db.ROLES;
-const User = db.user;
+const Role = require('../models/user.schema.js');
+const User = require('../models/user.schema.js');
 
 checkDuplicateUsernameOrEmail = (req, res, next) => {
   // Username
@@ -34,7 +34,12 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
   });
 };
 
-checkRolesExisted = (req, res, next) => {
+checkRolesExisted = async (req, res, next) => {
+  console.log('[checkRolesExisted] Starting ...');
+  const allRoles = await Role.find({})
+  console.log(allRoles);
+  const ROLES = allRoles.map(rol => rol.name)
+
   if (req.body.roles) {
     for (let i = 0; i < req.body.roles.length; i++) {
       if (!ROLES.includes(req.body.roles[i])) {
@@ -45,6 +50,8 @@ checkRolesExisted = (req, res, next) => {
       }
     }
   }
+
+  console.log('[checkRolesExisted] Finished.');
   
   next();
 };

@@ -1,8 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 
-const mongoose  = require("./app/models/mongooseConection.js");
-
 const app = express();
 
 var corsOptions = {
@@ -20,15 +18,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // database
-const db = require("./app/models");
-const Role = db.role;
-
-db.sequelize.sync();
-// force: true will drop the table if it already exists
-// db.sequelize.sync({force: true}).then(() => {
-//   console.log('Drop and Resync Database with { force: true }');
-//   initial();
-// });
+require("./app/models/mongooseConection.js");
+require("./app/seeders/roles.seeder.js")
 
 // simple route
 app.get("/", (req, res) => {
