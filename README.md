@@ -1,60 +1,45 @@
-# Node.js – JWT Authentication & Authorization example with JSONWebToken & Sequelize
+**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
-## User Registration, User Login and Authorization process.
-The diagram shows flow of how we implement User Registration, User Login and Authorization process.
+When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
 
-![jwt-token-authentication-node-js-example-flow](jwt-token-authentication-node-js-example-flow.png)
+*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
 
-For more detail, please visit:
-> [Node.js JWT Authentication & Authorization example](https://bezkoder.com/node-js-jwt-authentication-mysql/)
+---
 
-You may need to implement Refresh Token:
+## Edit a file
 
-![jwt-refresh-token-node-js-example-flow](jwt-refresh-token-node-js-example-flow.png)
+You’ll start by editing this README file to learn how to edit a file in Bitbucket.
 
-> [Node.js JWT Refresh Token example](https://bezkoder.com/jwt-refresh-token-node-js/)
+1. Click **Source** on the left side.
+2. Click the README.md link from the list of files.
+3. Click the **Edit** button.
+4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
+5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
+6. Go back to the **Source** page.
 
-Working with Front-end:
-> [Vue](https://www.bezkoder.com/jwt-vue-vuex-authentication/)
+---
 
-> [Angular 8](https://www.bezkoder.com/angular-jwt-authentication/) / [Angular 10](https://www.bezkoder.com/angular-10-jwt-auth/) / [Angular 11](https://www.bezkoder.com/angular-11-jwt-auth/) / [Angular 12](https://www.bezkoder.com/angular-12-jwt-auth/) / [Angular 13](https://www.bezkoder.com/angular-13-jwt-auth/)
+## Create a file
 
-> [React](https://www.bezkoder.com/react-jwt-auth/) / [React + Redux](https://www.bezkoder.com/react-redux-jwt-auth/)
+Next, you’ll add a new file to this repository.
 
-## More Practice:
-> [Build Node.js Rest APIs with Express, Sequelize & MySQL](https://bezkoder.com/node-js-express-sequelize-mysql/)
+1. Click the **New file** button at the top of the **Source** page.
+2. Give the file a filename of **contributors.txt**.
+3. Enter your name in the empty file space.
+4. Click **Commit** and then **Commit** again in the dialog.
+5. Go back to the **Source** page.
 
-> [Server side Pagination in Node.js with Sequelize and MySQL](https://bezkoder.com/node-js-sequelize-pagination-mysql/)
+Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
 
-> [Node.js Express File Upload Rest API example](https://bezkoder.com/node-js-express-file-upload/)
+---
 
-> [Node.js Express File Upload with Google Cloud Storage example](https://bezkoder.com/google-cloud-storage-nodejs-upload-file/)
+## Clone a repository
 
-> [Node.js JWT Authentication & Authorization example with MongoDB](https://bezkoder.com/node-js-mongodb-auth-jwt/)
+Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
 
-Associations:
-> [Sequelize Associations: One-to-Many Relationship example](https://bezkoder.com/sequelize-associate-one-to-many/)
+1. You’ll see the clone button under the **Source** heading. Click that button.
+2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
+3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
+4. Open the directory you just created to see your repository’s files.
 
-> [Sequelize Associations: Many-to-Many Relationship example](https://bezkoder.com/sequelize-associate-many-to-many/)
-
-Deployment:
-> [Docker Compose: Node.js Express and MySQL example](https://www.bezkoder.com/docker-compose-nodejs-mysql/)
-
-> [Deploying/Hosting Node.js app on Heroku with MySQL database](https://bezkoder.com/deploy-node-js-app-heroku-cleardb-mysql/)
-
-Integration on same Server/Port:
-> [Integrate Vue with Node.js Express](https://www.bezkoder.com/serve-vue-app-express/)
-
-> [Integrate Angular with Node.js Express](https://www.bezkoder.com/integrate-angular-12-node-js/)
-
-> [Integrate React with Node.js Express](https://www.bezkoder.com/integrate-react-express-same-server-port/)
-
-## Project setup
-```
-npm install
-```
-
-### Run
-```
-node server.js
-```
+Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).

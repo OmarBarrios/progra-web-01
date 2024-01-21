@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 
+const mongoose  = require("./app/models/mongooseConection.js");
+
 const app = express();
 
 var corsOptions = {
