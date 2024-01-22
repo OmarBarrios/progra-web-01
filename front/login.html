@@ -28,6 +28,10 @@
         <label for="registerPassword">Password:</label>
         <input type="password" id="registerPassword" name="password" required>
 
+        <!-- Add a new input field for roles -->
+        <label for="registerRoles">Roles:</label>
+        <input type="text" id="registerRoles" name="roles" placeholder="Comma-separated roles">
+
         <button type="button" onclick="register()">Register</button>
     </form>
 
@@ -41,22 +45,26 @@
                 password: password
             };
 
-            sendRequest('http://localhost:8080/api/auth/signin', data);
+            sendRequest('http://localhost:3000/api/auth/signin', data);
         }
 
         function register() {
             const username = document.getElementById('registerUsername').value;
             const email = document.getElementById('registerEmail').value;
             const password = document.getElementById('registerPassword').value;
+            const rolesInput = document.getElementById('registerRoles').value;
+
+            // Convert the roles input into an array
+            const roles = rolesInput.split(',').map(role => role.trim());
 
             const data = {
                 username: username,
                 email: email,
                 password: password,
-                roles: ["moderator", "user", "admin"]
+                roles: roles
             };
 
-            sendRequest('http://localhost:8080/api/auth/signup', data);
+            sendRequest('http://localhost:3000/api/auth/signup', data);
         }
 
         function sendRequest(url, data) {

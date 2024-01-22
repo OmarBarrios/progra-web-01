@@ -23,7 +23,7 @@ async function insertRoles() {
       const existingAdminRole = await Role.findOne({ id: 1 });
       const existingModeratorRole = await Role.findOne({ id: 2 });
       const existingUserRole = await Role.findOne({ id: 3 });
-  
+
       // Insertar solo si no existen
       if (!existingAdminRole) {
         await adminRole.save();
@@ -51,6 +51,5 @@ async function insertRoles() {
       console.error('Error al insertar roles:', error);
     }
   }
-  
-  // Llamar a la función para insertar roles al iniciar la API
+
   insertRoles();
